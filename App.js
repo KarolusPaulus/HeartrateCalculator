@@ -15,15 +15,18 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text>Age</Text>
+      <Text style={styles.field}>Age</Text>
       <TextInput
+      style={styles.field}
       value={age}
       onChangeText={text => setAge(text)}
       keyboardType='decimal-pad'
       />
-      <Text>Limits</Text>
-      <Text>{hr}</Text>
-      <Button title='Calculate' onPress={calculate}></Button>
+      <Text style={styles.field}>Limits</Text>
+      <Text style={styles.field}>{hr}</Text>
+      <View style={styles.button}>
+      <Button title='Calculate' onPress={calculate}>Calculate</Button>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -35,5 +38,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  field: {
+    padding: 10,
+    fontSize: 20,
+  },
+  button: {
+    padding: 15,
   },
 });
