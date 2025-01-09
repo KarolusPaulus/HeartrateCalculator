@@ -1,4 +1,4 @@
 # HeartRateApp
- 
-![example one](assets/1.png?=250x250)
-![example two](assets/2.png?=250x250)
+
+<img src="assets/1.png" alt="example one" width="300" height="auto">
+<img src="assets/2.png" alt="example two" width="300" height="auto">
